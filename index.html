@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,12 +9,20 @@
 <body>
   <div class="container">
     <h1>AI Crush Generator 💘</h1>
-    <p>আপনার নাম দিন আর জেনে নিন কে হতে পারে আপনার ক্রাশ!</p>
+    <p>তোমার ক্রাশ কে হতে পারে? দেখে নাও এখনই!</p>
 
+    <label>তোমার ক্রাশ কেমন হওয়া উচিত?</label><br>
+    <select id="genderSelect">
+      <option value="female">মেয়ে</option>
+      <option value="male">ছেলে</option>
+    </select>
+
+    <br><br>
     <input type="text" id="nameInput" placeholder="তোমার নাম লিখো..." />
     <button onclick="generateCrush()">জানুন এখনই 🔮</button>
 
     <div class="result" id="resultBox" style="display: none;">
+      <img id="crushImg" src="" alt="Crush Photo" />
       <h2>তোমার ক্রাশ: <span id="crushName"></span> 💘</h2>
       <p>ম্যাচিং পারসেন্ট: <strong id="matchPercent"></strong>%</p>
       <div class="bar">
