@@ -1,50 +1,63 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fff0f5;
-    text-align: center;
-    padding: 20px;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #333;
 }
+
 .popup {
-    background: #ffe6e9;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 30px auto;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  background: #ffe0e6;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
+
 .popup button {
-    margin: 10px;
-    padding: 10px 20px;
-    background: #ff4d6d;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4d6d;
+  color: white;
+  cursor: pointer;
 }
+
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 10px 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 15px 0;
+  object-fit: cover;
+  border: 3px solid #ff4d6d;
 }
+
 .chat-box {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 400px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 450px;
 }
-.chat-box input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+
+.chat-box textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
 }
+
 .romantic-quote, .love-tips {
-    background: #fff5f8;
-    padding: 15px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 15px;
+  background: #fff6f9;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
