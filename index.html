@@ -2,40 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LoveMate AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Crush Generator 💘</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="popup" id="genderPopup">
-    <h2>Select Your Virtual Partner</h2>
-    <button onclick="selectGender('girl')">Boyfriend</button>
-    <button onclick="selectGender('boy')">Girlfriend</button>
-  </div>
+  <div class="container">
+    <h1>AI Crush Generator 💘</h1>
+    <p>আপনার নাম দিন আর জেনে নিন কে হতে পারে আপনার ক্রাশ!</p>
 
-  <div id="mainContent" style="display:none;">
-    <h1 id="welcomeText"></h1>
-    <img id="profilePic" src="" alt="Profile Picture" class="profile-img"/>
-    <p id="bioText"></p>
+    <input type="text" id="nameInput" placeholder="তোমার নাম লিখো..." />
+    <button onclick="generateCrush()">জানুন এখনই 🔮</button>
 
-    <div class="chat-box">
-      <h3>Chat With Your Lover 💬</h3>
-      <textarea placeholder="Type something..." disabled></textarea>
-      <p><em>This is a demo UI. Real chat coming soon.</em></p>
-    </div>
-
-    <div class="romantic-quote">
-      <h4>💖 Romantic Quote</h4>
-      <p id="quoteText"></p>
-    </div>
-
-    <div class="love-tips">
-      <h4>💡 Love Tip</h4>
-      <ul>
-        <li>Respect and listen to your partner</li>
-        <li>Surprise with small things</li>
-        <li>Be honest always</li>
-      </ul>
+    <div class="result" id="resultBox" style="display: none;">
+      <h2>তোমার ক্রাশ: <span id="crushName"></span> 💘</h2>
+      <p>ম্যাচিং পারসেন্ট: <strong id="matchPercent"></strong>%</p>
+      <div class="bar">
+        <div id="loveBar"></div>
+      </div>
+      <p id="messageText"></p>
     </div>
   </div>
 
