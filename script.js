@@ -1,33 +1,28 @@
-const profiles = {
-  boy: {
-    name: "Aria (Your AI Girlfriend)",
-    img: "https://i.imgur.com/J8FwZRa.png",
-    bio: "Hi! I'm Aria, here to chat, care, and make your day sweeter ❤️"
-  },
-  girl: {
-    name: "Alex (Your AI Boyfriend)",
-    img: "https://i.imgur.com/9xquVtR.png",
-    bio: "Hey! I'm Alex, your virtual lover always ready to listen and support 💖"
-  }
-};
+const crushNames = ["Ariana", "Rahul", "Maya", "Zayn", "Nila", "Leo", "Sara", "Asif", "Emily", "Rafi"];
 
-const quotes = [
-  "Love is not about how many days, months, or years you’ve been together. Love is about how much you love each other every single day.",
-  "I didn’t choose you, my heart did.",
-  "You’re the reason I believe in love.",
-  "Every moment with you is like a dream I never want to wake up from.",
-  "I still get butterflies even though I’ve seen you a hundred times."
+const messages = [
+  "Wow! তোমাদের মধ্যে দারুন ম্যাচিং 💞",
+  "হতে পারে, চেষ্টা করতে পারো 😉",
+  "Hmm... একটু দূরত্ব আছে 😅",
+  "না ভাই, ভুলে যাও 😢",
+  "তোমার ক্রাশকে মেসেজ দাও এখনই 📲"
 ];
 
-function selectGender(type) {
-  document.getElementById("genderPopup").style.display = "none";
-  document.getElementById("mainContent").style.display = "block";
+function generateCrush() {
+  const name = document.getElementById("nameInput").value.trim();
+  if (name === "") {
+    alert("তোমার নাম লিখো আগে!");
+    return;
+  }
 
-  const profile = profiles[type];
-  document.getElementById("welcomeText").innerText = `Meet ${profile.name}`;
-  document.getElementById("profilePic").src = profile.img;
-  document.getElementById("bioText").innerText = profile.bio;
+  const randomCrush = crushNames[Math.floor(Math.random() * crushNames.length)];
+  const match = Math.floor(Math.random() * 61) + 40; // 40% to 100%
+  const msg = messages[Math.floor(Math.random() * messages.length)];
 
-  const quote = quotes[Math.floor(Math.random() * quotes.length)];
-  document.getElementById("quoteText").innerText = quote;
+  document.getElementById("crushName").innerText = randomCrush;
+  document.getElementById("matchPercent").innerText = match;
+  document.getElementById("messageText").innerText = msg;
+  document.getElementById("loveBar").style.width = match + "%";
+
+  document.getElementById("resultBox").style.display = "block";
 }
