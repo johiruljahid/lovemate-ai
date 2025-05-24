@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(120deg, #ff9aa2, #ffdde1);
+  background: linear-gradient(135deg, #ff9aa2, #ffdde1);
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
   margin: 0;
@@ -16,11 +16,11 @@ h1 {
   font-size: 32px;
 }
 
-p {
+p, label {
   color: #fff;
 }
 
-input {
+input, select {
   padding: 10px;
   width: 250px;
   border-radius: 10px;
@@ -48,6 +48,14 @@ button {
   width: 90%;
   max-width: 400px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.result img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 0;
+  object-fit: cover;
 }
 
 .bar {
