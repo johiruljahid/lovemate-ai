@@ -1,4 +1,3 @@
-
 const profiles = {
     boy: {
         name: "Aria (Your AI Girlfriend)",
