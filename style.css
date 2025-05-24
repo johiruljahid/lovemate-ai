@@ -1,63 +1,67 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff0f5;
+  background: linear-gradient(120deg, #ff9aa2, #ffdde1);
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
   margin: 0;
-  padding: 20px;
-  color: #333;
+  padding: 0;
 }
 
-.popup {
-  background: #ffe0e6;
-  padding: 25px;
+.container {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+}
+
+p {
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.result {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
   border-radius: 12px;
   width: 90%;
   max-width: 400px;
-  margin: 40px auto;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.popup button {
-  margin: 10px;
-  padding: 12px 24px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: #ff4d6d;
-  color: white;
-  cursor: pointer;
-}
-
-.profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin: 15px 0;
-  object-fit: cover;
-  border: 3px solid #ff4d6d;
-}
-
-.chat-box {
-  margin: 20px auto;
-  width: 90%;
-  max-width: 450px;
-}
-
-.chat-box textarea {
+.bar {
   width: 100%;
-  height: 80px;
-  padding: 10px;
+  background: #ddd;
   border-radius: 10px;
-  border: 1px solid #ccc;
-  resize: none;
+  height: 20px;
+  margin: 10px 0;
 }
 
-.romantic-quote, .love-tips {
-  background: #fff6f9;
-  padding: 15px;
-  margin: 20px auto;
-  border-radius: 15px;
-  width: 90%;
-  max-width: 450px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+#loveBar {
+  height: 100%;
+  width: 0%;
+  background: #ff4d6d;
+  border-radius: 10px;
+  transition: width 1s;
 }
